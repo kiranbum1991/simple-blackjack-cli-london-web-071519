@@ -46,8 +46,8 @@ def hit? (current_total)
    else
      invalid_command
    end
-  puts "Your cards add up to #{current_total}"
   return current_total
+  puts "Your cards add up to #{current_total}"
 end
 
 def invalid_command
