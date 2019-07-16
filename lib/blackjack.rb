@@ -64,11 +64,9 @@ def runner
   welcome
   initial_round
   cards = 0
-until answer >= 5
-  print "How many times do you want to print 'hello'? Enter a number greater than 5 to exit) "
+until cards >= 21
+  hit?
   answer = gets.chomp.to_i
   print_hello(answer)
 end
-  hit?
-
 end
