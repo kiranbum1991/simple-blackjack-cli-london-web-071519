@@ -42,11 +42,12 @@ def hit? (current_total)
   if user_response == "h"
      current_total += deal_card
    elsif user_response == "s"
-     current_total
+      current_total
    else
      invalid_command
    end
   puts "Your cards add up to #{current_total}"
+  return current_total
 end
 
 def invalid_command
