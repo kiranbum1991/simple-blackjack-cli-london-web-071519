@@ -35,11 +35,18 @@ def initial_round
   return first_round
 end
 ######################################################
-def hit?
+def hit? (current_total)
   # code hit? here
   prompt_user
-  prompt_user = get_user_input
-  get_user_input += deal_card
+  user_response = get_user_input
+  if user_response == "h"
+     current_total += deal_card
+   elsif user_response == "s"
+     current_total
+   else
+     invalid_command
+   end
+  puts "Your cards add up to #{current_total}"
 end
 
 def invalid_command
